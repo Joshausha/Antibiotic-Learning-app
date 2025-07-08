@@ -9,8 +9,10 @@
  * - setSearchTerm: function - function to update search term
  */
 
-import React, { memo } from 'react';
+import React, { memo, useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import SkeletonLoader, { ConditionCardSkeleton } from './SkeletonLoader';
+import ErrorMessage from './ErrorMessage';
 
 const ConditionsTab = ({ 
   filteredConditions, 
@@ -18,6 +20,54 @@ const ConditionsTab = ({
   searchTerm, 
   setSearchTerm 
 }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Simulate loading when conditions change
+  useEffect(() => {
+    if (filteredConditions) {
+      setIsLoading(false);
+    }
+  }, [filteredConditions]);
+
+  // Show loading state
+  if (isLoading) {
+    return (
+      <div>
+        <div className="relative mb-8">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+          <input
+            type="text"
+            placeholder="Search conditions, pathogens, or treatments..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="input-field w-full pl-10 pr-4 py-3 text-lg"
+            aria-label="Search medical conditions"
+          />
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[...Array(6)].map((_, i) => (
+            <ConditionCardSkeleton key={i} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Show error state
+  if (error) {
+    return (
+      <ErrorMessage
+        title="Unable to load conditions"
+        message={error}
+        onRetry={() => {
+          setError(null);
+          setIsLoading(true);
+        }}
+        showRetry={true}
+      />
+    );
+  }
   return (
     <div>
       {/* Search Bar */}
@@ -28,7 +78,7 @@ const ConditionsTab = ({
           placeholder="Search conditions, pathogens, or treatments..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full pl-10 pr-4 py-3 text-lg border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+          className="input-field w-full pl-10 pr-4 py-3 text-lg"
           aria-label="Search medical conditions"
         />
       </div>

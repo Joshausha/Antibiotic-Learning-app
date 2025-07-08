@@ -7,9 +7,19 @@
  */
 
 import React, { memo } from 'react';
-import { BookOpen, Target, Brain } from 'lucide-react';
+import { BookOpen, Target, Brain, TrendingUp, Award } from 'lucide-react';
+import { ProgressBar, CircularProgress } from './ProgressIndicator';
 
 const HomeTab = ({ setActiveTab }) => {
+  // Mock user progress data for demonstration
+  const userProgress = {
+    totalQuizzes: 3,
+    averageScore: 85,
+    sectionsCompleted: 2,
+    totalSections: 6,
+    weeklyGoal: 5,
+    weeklyProgress: 3
+  };
   const handleNavigation = (tabName) => {
     try {
       setActiveTab(tabName);
@@ -36,13 +46,60 @@ const HomeTab = ({ setActiveTab }) => {
           Master infectious diseases and antimicrobial therapy with evidence-based clinical guidelines
         </p>
         <button 
-          className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          className="btn-primary px-8 py-3 text-lg w-full md:w-auto"
           onClick={() => handleNavigation('conditions')}
           onKeyDown={(e) => handleKeyDown(e, 'conditions')}
         >
           Start Learning
         </button>
       </div>
+
+      {/* Progress Dashboard */}
+      {userProgress.totalQuizzes > 0 && (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="card text-center">
+            <div className="flex items-center justify-center mb-4">
+              <CircularProgress 
+                progress={userProgress.sectionsCompleted}
+                total={userProgress.totalSections}
+                size="lg"
+                color="green"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Learning Progress</h3>
+            <p className="text-gray-600">
+              {userProgress.sectionsCompleted} of {userProgress.totalSections} sections completed
+            </p>
+          </div>
+
+          <div className="card text-center">
+            <div className="flex items-center justify-center mb-4">
+              <div className="p-4 bg-blue-100 rounded-full">
+                <TrendingUp className="text-blue-600" size={24} />
+              </div>
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Average Score</h3>
+            <p className="text-2xl font-bold text-blue-600 mb-2">{userProgress.averageScore}%</p>
+            <p className="text-gray-600">Based on {userProgress.totalQuizzes} quizzes</p>
+          </div>
+
+          <div className="card">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold">Weekly Goal</h3>
+              <Award className="text-yellow-600" size={20} />
+            </div>
+            <ProgressBar 
+              progress={userProgress.weeklyProgress}
+              total={userProgress.weeklyGoal}
+              showStats={true}
+              color="yellow"
+            />
+            <p className="text-sm text-gray-600 mt-2">
+              {userProgress.weeklyProgress} of {userProgress.weeklyGoal} quizzes this week
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Feature Cards */}
       <div className="grid md:grid-cols-3 gap-8">

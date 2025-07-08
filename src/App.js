@@ -12,6 +12,10 @@ import QuizTab from './components/QuizTab';
 import ConditionDetailModal from './components/ConditionDetailModal';
 import UserProgress from './components/UserProgress';
 import LoadingSpinner from './components/LoadingSpinner';
+import QuizAnalyticsDashboard from './components/QuizAnalyticsDashboard';
+
+// Import quiz questions data
+import quizQuestions from './data/quizQuestions';
 
 // Lazy load heavy components 
 const PathogenExplorer = lazy(() => import('./components/PathogenExplorer'));
@@ -86,8 +90,17 @@ const AppContent = () => {
           {activeTab === 'quiz' && (
             <ErrorBoundary>
               <QuizTab 
+                quizQuestions={quizQuestions}
+                setActiveTab={setActiveTab}
+              />
+            </ErrorBoundary>
+          )}
+
+          {activeTab === 'analytics' && (
+            <ErrorBoundary>
+              <QuizAnalyticsDashboard
                 quizProgress={quizProgress}
-                onQuizComplete={() => console.log('Quiz completed!')}
+                quizQuestions={quizQuestions}
               />
             </ErrorBoundary>
           )}

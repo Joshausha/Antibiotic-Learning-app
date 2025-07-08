@@ -1,78 +1,118 @@
-# Senior Advisor Guide
-## Junior Developer Supervision & Performance Evaluation
+# CLAUDE.md
 
-This file provides comprehensive guidance for senior developers, technical leads, and AI assistants supervising junior developers working on the Antibiotic Learning App project.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
----
+## Development Commands
 
-## 📈 Current Project Status (Updated: July 4, 2025)
+- `npm start` - Start development server with hot reload
+- `npm test` - Run all tests with Jest
+- `npm run build` - Build production bundle
+- `npm run test:watch` - Run tests in watch mode
 
-### **🎉 PRODUCTION READY - SPRINT COMPLETE**
-**STATUS UPDATE**: Test Stabilization Sprint successfully completed! Application is **PRODUCTION READY** with 85.3% test pass rate and all critical issues resolved.
+## Architecture Overview
 
-### **Application Status - All Features Working ✅**
-- **Working Features**: Complete medical education platform with all tabs functional ✅
-  - ✅ **Home Tab**: Welcome interface working perfectly
-  - ✅ **Conditions Tab**: Medical conditions browser fully functional
-  - ✅ **Quiz Tab**: Interactive learning module with 23/23 tests passing
-  - ✅ **Pathogen Explorer**: Advanced network visualization working
-  - ✅ **Simple Explorer**: Main pathogen-antibiotic mapping feature operational
-  - ✅ **Antibiotic Explorer**: Comprehensive drug analysis tool functional  
-  - ✅ **Visualizations Tab**: 5 chart types with interactive filtering working
-  - ✅ **Progress Tab**: User analytics and progress tracking implemented
+This is a React 18.2.0 medical education application for learning about antibiotics, pathogens, and antimicrobial resistance. The app uses a tab-based navigation system with five main sections.
 
-### **Technical Status - Production Ready ✅**
-- **Build Status**: ✅ **EXCELLENT** - Production build successful (69 kB gzipped)
-- **Test Status**: ✅ **PRODUCTION READY** - 85.3% pass rate (186/218 tests, 0 critical failures)
-- **Architecture**: ✅ **SOLID** - Components fully integrated with robust error handling
-- **Bundle Performance**: ✅ **EXCELLENT** - 69 kB gzipped (optimal performance)
-- **Data Layer**: ✅ **PERFECT** - 10 pathogens, 15 antibiotics with 100% validation passing
+### Core Architecture Pattern
+- **React Context API** for global state management (UserContext)
+- **Custom hooks** for reusable logic (useUserProgress, useErrorHandler)
+- **Component-based architecture** with clear separation of concerns
+- **Webpack** build system with custom configuration
+- **Tailwind CSS** for styling (recently migrated from CDN to local)
 
-### **July 4th Sprint Success - ALL CRITICAL ISSUES RESOLVED ✅**
-- ✅ **localStorage Hook Tests**: Fixed all 6 failing tests with robust mock implementation (23/23 passing)
-- ✅ **Quiz Tab React.act() Warnings**: Resolved all async timing issues (23/23 tests passing)
-- ✅ **Syntax Error Resolution**: Fixed compilation errors in HomeTab.test.js and App.test.js
-- ✅ **Test Pass Rate Improvement**: Increased from ~55% to 85.3% (186/218 tests)
-- ✅ **Production Build Validation**: Confirmed build process works perfectly
-- ✅ **Development Workflow**: All npm scripts and dev server working flawlessly
+### Key Architecture Components
 
-### **Production Deployment Status**
-**Phase 5: PRODUCTION READY - DEPLOYMENT COMPLETE**
-- **Current Status**: ✅ **PRODUCTION READY** - All 8 tabs functional, ready for immediate deployment
-- **SPRINT SUCCESS**: Completed test stabilization in 1 day vs estimated 1-2 weeks
-- **Achievement**: All critical blocking issues resolved, non-critical UI text issues remain
-- **Quality**: 85.3% test pass rate with 100% pass rate on core functionality
-- **Performance**: Production build optimized and validated
+#### State Management
+- **UserContext** (`src/context/UserContext.js`) - Manages user progress, quizzes, and achievements
+- **localStorage** - Persistent user data storage
+- **useUserProgress** custom hook - Handles progress tracking and quiz state
 
-### **Completed Sprint Achievements**
-1. ✅ **localStorage Mock Architecture**: Robust test patterns with proper state management
-2. ✅ **React Async Testing**: Proper act() and waitFor() patterns across all components
-3. ✅ **Syntax Error Resolution**: Fixed Unicode escape sequence issues in test files
-4. ✅ **Build System Validation**: Production compilation verified working
-5. ✅ **Component Integration**: All 8 navigation tabs confirmed functional
-6. ✅ **Performance Optimization**: Bundle size maintained at excellent 69 kB gzipped
-7. ✅ **Development Environment**: Hot reloading and development tools working perfectly
-8. ✅ **Production Architecture**: Lazy loading, error boundaries, comprehensive data management
+#### Navigation System
+- **Header** (`src/components/Header.js`) - Tab-based navigation with active state management
+- **App** (`src/components/App.js`) - Main component that renders active tab content
+- Five main tabs: Home, Conditions, Quiz, Pathogen Explorer, Antibiotic Explorer
 
-### **Current Status - Ready for Production ✅**
-- **Critical Issues**: ✅ 0 blocking issues (all resolved)
-- **Test Infrastructure**: ✅ Stable and reliable (85.3% pass rate)
-- **Build Process**: ✅ Clean production builds without errors
-- **Core Functionality**: ✅ All major features tested and working
+#### Data Structure
+Located in `/src/data/` - All medical data is stored as JavaScript modules:
+- `conditions.js` - 20 medical conditions across 10 categories
+- `quizQuestions.js` - 79+ quiz questions with difficulty levels
+- `pathogens.js` - 10 common pathogens
+- `antibiotics.js` - 15 common antibiotics
+- `RBO_JSON.js` - Medical reference data (833 lines)
 
-### **File Handling Guidelines**
-- **Large Files**: Use offset/limit parameters for files >25k tokens (25,000 token read limit)
-- **Audit Files**: Always read recent entries using `offset: -50` first to get latest status
-- **Strategy**: Attempt full read first, then use offset on token limit failures
-- **Best Practice**: For journals/logs, read from end using negative offset for most recent content
+#### Error Handling Pattern
+- **Error boundaries** with custom error handling
+- **useErrorHandler** hook for consistent error management
+- **Graceful fallbacks** for all major components
 
-### Documentation Guidelines
-- **please update documentation after every phase completion**
-- **use clear, concise language**
-- **include code examples where applicable**
-- **focus on high-level architecture and design patterns**
-- **ensure all new features are documented in the README**
-- **use markdown formatting for readability**
+## Critical Development Patterns
 
+### Data Flow
+1. User actions trigger state changes in UserContext
+2. Progress is persisted to localStorage
+3. Components consume context state via useContext
+4. Quiz state is managed through useUserProgress hook
 
-[... rest of the existing content remains unchanged ...]
+### Component Organization
+- **Feature-based components** in `/src/components/`
+- **Reusable UI components** with consistent styling
+- **Lazy loading** for performance optimization
+- **Responsive design** with mobile-first approach
+
+### Testing Strategy
+- **Jest** with React Testing Library
+- **Integration tests** for major user flows
+- **Component tests** for individual components
+- Test files located in `/src/tests/`
+
+## Recent Enhancements
+
+### Tailwind CSS Migration
+- Migrated from CDN to local installation
+- Custom configuration in `tailwind.config.js`
+- Custom CSS classes in `src/index.css`
+
+### New Components Added
+- **SkeletonLoader** - Loading state components
+- **ErrorMessage** - User-friendly error displays
+- **ProgressIndicator** - Multiple progress visualization types
+- **Enhanced QuizProgress** - Real-time quiz statistics
+- **QuizAnalyticsDashboard** - Comprehensive analytics dashboard with data visualizations
+
+### Content Enhancements
+- **25+ new quiz questions** generated with difficulty levels
+- **15 resistance scenarios** - Clinical case studies
+- **Enhanced medical data** with quality validation
+- **Difficulty classification** - Beginner/Intermediate/Advanced
+
+### Analytics Dashboard Features
+- **Real-time Performance Charts** - Visual representation of quiz progress over time
+- **Category Performance Analysis** - Radar charts showing knowledge strengths across medical categories
+- **Difficulty Progression Tracking** - Visual breakdown of performance by difficulty level
+- **Learning Streak Visualization** - Gamified progress tracking with streak counters
+- **Topic Analysis** - Automated identification of knowledge strengths and weaknesses
+- **Interactive Timeline** - Recent activity tracking with detailed quiz history
+- **Personalized Recommendations** - AI-powered learning suggestions based on performance data
+- **Time Range Filtering** - Customizable analytics views (all time, weekly, monthly, quarterly)
+- **Mobile-Responsive Design** - Fully optimized for all device sizes
+
+## Build System
+
+### Webpack Configuration
+- Custom webpack config for asset handling
+- Babel transpilation for modern JavaScript
+- CSS processing with PostCSS
+- Development server with hot reload
+
+### Bundle Structure
+- Entry point: `src/index.js`
+- CSS imports: `src/index.css` (includes Tailwind)
+- Asset optimization for production builds
+
+## Important Notes
+
+- Medical data should be validated before adding new content
+- Quiz questions follow specific format with ID, difficulty, and medical accuracy
+- Progress tracking is essential for user experience
+- Error handling must be comprehensive for medical education app
+- All components should be responsive and accessible

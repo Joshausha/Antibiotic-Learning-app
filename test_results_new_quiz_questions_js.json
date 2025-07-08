@@ -1,0 +1,161 @@
+{
+  "total_questions": 25,
+  "passed": 7,
+  "failed": 18,
+  "issues": [
+    {
+      "question_index": 1,
+      "question": "A patient with skin infection has an isolate resistant to Azithromycin. What is the most likely resi...",
+      "issues": [
+        "Antibiotic 'azithromycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 2,
+      "question": "A patient receiving Gentamicin develops Nephrotoxicity. What should be the next step in management?...",
+      "issues": [
+        "Antibiotic 'gentamicin' mentioned without proper clinical context"
+      ]
+    },
+    {
+      "question_index": 4,
+      "question": "Which antibiotic works by Protein synthesis inhibition (30S ribosome)?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 5,
+      "question": "Which antibiotic works by Protein synthesis inhibition (50S ribosome)?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 8,
+      "question": "A patient with pneumonia has an isolate resistant to Clindamycin. What is the most likely resistance...",
+      "issues": [
+        "Antibiotic 'clindamycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 10,
+      "question": "A 74-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 12,
+      "question": "A patient receiving Azithromycin develops GI upset. What should be the next step in management?...",
+      "issues": [
+        "Antibiotic 'azithromycin' mentioned without proper clinical context"
+      ]
+    },
+    {
+      "question_index": 13,
+      "question": "A patient receiving Ciprofloxacin develops CNS effects. What should be the next step in management?...",
+      "issues": [
+        "Antibiotic 'ciprofloxacin' mentioned without proper clinical context"
+      ]
+    },
+    {
+      "question_index": 14,
+      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 15,
+      "question": "A 37-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 16,
+      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 18,
+      "question": "A patient with urinary tract infection has an isolate resistant to Vancomycin. What is the most like...",
+      "issues": [
+        "Antibiotic 'vancomycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 20,
+      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 21,
+      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "issues": [
+        "Question too short - may lack sufficient clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 22,
+      "question": "A 76-year-old male presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains. ...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 23,
+      "question": "A patient with bloodstream infection has an isolate resistant to Vancomycin. What is the most likely...",
+      "issues": [
+        "Antibiotic 'vancomycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 24,
+      "question": "A 76-year-old male presents with cough and dyspnea. Gram stain shows Positive Cocci in Clusters. Wha...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 25,
+      "question": "A patient receiving Ceftriaxone develops Biliary sludging. What should be the next step in managemen...",
+      "issues": [
+        "Antibiotic 'ceftriaxone' mentioned without proper clinical context"
+      ]
+    }
+  ],
+  "summary": {
+    "difficulty_distribution": {
+      "advanced": 4,
+      "intermediate": 17,
+      "beginner": 4
+    },
+    "category_distribution": {
+      "Antibiotic Resistance": 4,
+      "Side Effects": 4,
+      "Clinical Scenarios": 7,
+      "Antibiotic Mechanisms": 6,
+      "Pathogen Identification": 4
+    },
+    "pass_rate": 28.000000000000004
+  },
+  "recommendations": [
+    "Consider reviewing questions with issues for medical accuracy"
+  ]
+}

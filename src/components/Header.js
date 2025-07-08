@@ -21,7 +21,8 @@ import {
   TrendingUp, 
   Stethoscope, 
   Menu, 
-  X 
+  X,
+  PieChart
 } from 'lucide-react';
 
 const Header = ({ 
@@ -39,6 +40,7 @@ const Header = ({
     { id: 'simple-pathogen-explorer', label: 'Simple Explorer', icon: Stethoscope },
     { id: 'antibiotic-explorer', label: 'Antibiotic Explorer', icon: FlaskConical },
     { id: 'quiz', label: 'Quiz', icon: Brain },
+    { id: 'analytics', label: 'Analytics', icon: PieChart },
     { id: 'visualizations', label: 'Visualizations', icon: BarChart },
     { id: 'user-progress', label: 'Progress', icon: TrendingUp }
   ];
@@ -107,24 +109,25 @@ const Header = ({
         {isMobile && (
           <button
             onClick={() => setShowMobileMenu(!showMobileMenu)}
-            className="p-2 rounded-md hover:bg-white hover:bg-opacity-10"
+            className="p-2 rounded-md hover:bg-white hover:bg-opacity-10 transition-colors duration-200 touch-manipulation"
             aria-label="Toggle menu"
+            aria-expanded={showMobileMenu}
           >
-            <Menu size={24} />
+            {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
           </button>
         )}
       </div>
 
       {/* Mobile Navigation Menu */}
       {isMobile && showMobileMenu && (
-        <div className="mt-4 py-4 border-t border-white border-opacity-20">
+        <div className="mt-4 py-4 border-t border-white border-opacity-20 animate-slide-in">
           <nav className="flex flex-col gap-2">
             {navItems.map(({ id, label, icon: Icon }) => (
               <div
                 key={id}
                 role="button"
                 tabIndex={0}
-                className={`flex items-center gap-3 cursor-pointer p-3 rounded-md transition-colors ${
+                className={`flex items-center gap-3 cursor-pointer p-4 rounded-md transition-colors duration-200 touch-manipulation ${
                   activeTab === id ? 'bg-white bg-opacity-20' : 'hover:bg-white hover:bg-opacity-10'
                 }`}
                 onClick={() => {
@@ -140,7 +143,7 @@ const Header = ({
                 }}
               >
                 <Icon size={20} />
-                <span className="font-medium">{label}</span>
+                <span className="font-medium text-base">{label}</span>
               </div>
             ))}
           </nav>

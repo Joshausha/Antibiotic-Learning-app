@@ -11,6 +11,7 @@
 
 import React, { memo } from 'react';
 import { Award, TrendingUp, Star, Clock, Target, BookOpen } from 'lucide-react';
+import { LearningProgress, ProgressBar } from './ProgressIndicator';
 
 const UserProgress = ({ 
   userProgress, 
@@ -61,13 +62,29 @@ const UserProgress = ({
     }
   };
 
+  // Mock section data for learning progress
+  const learningSections = [
+    { name: 'Bacterial Infections', completed: stats.totalQuizzes > 0 },
+    { name: 'Viral Infections', completed: stats.totalQuizzes > 2 },
+    { name: 'Fungal Infections', completed: stats.totalQuizzes > 5 },
+    { name: 'Parasitic Infections', completed: stats.totalQuizzes > 8 },
+    { name: 'Antibiotic Resistance', completed: stats.totalQuizzes > 10 },
+    { name: 'Clinical Guidelines', completed: stats.totalQuizzes > 15 }
+  ];
+
   return (
     <div className="space-y-6">
+      {/* Learning Progress Overview */}
+      <LearningProgress 
+        sections={learningSections}
+        className="mb-6"
+      />
+
       {/* Progress Overview */}
       <div className="bg-white rounded-xl shadow-sm border p-6">
         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
           <Award className="text-blue-600" size={24} />
-          Learning Progress
+          Quiz Statistics
         </h2>
 
         {/* Key Statistics */}

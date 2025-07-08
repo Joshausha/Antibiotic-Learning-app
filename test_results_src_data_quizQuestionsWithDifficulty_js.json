@@ -1,0 +1,577 @@
+{
+  "total_questions": 79,
+  "passed": 8,
+  "failed": 71,
+  "issues": [
+    {
+      "question_index": 1,
+      "question": "Which of the following is a common pathogen causing uti - pyelonephritis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 2,
+      "question": "What is the recommended empiric antibiotic therapy for uncomplicated bloodstream infection in entero...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 3,
+      "question": "Which of the following is an important clinical consideration for suspected meningitis?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 4,
+      "question": "What is the recommended duration of antibiotic therapy for meningitis (non- neonates)?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 5,
+      "question": "What is the recommended empiric antibiotic therapy for suspected meningitis in neonates 8-28 days of...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 6,
+      "question": "Which of the following is an important clinical consideration for cellulitis (nonpurulent)?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 8,
+      "question": "Which of the following is a common pathogen causing unclear source?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 9,
+      "question": "What is the recommended duration of antibiotic therapy for uti - pyelonephritis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 10,
+      "question": "Which of the following is an important clinical consideration for mastoiditis?...",
+      "issues": [
+        "Explanation too short - should provide more detail"
+      ]
+    },
+    {
+      "question_index": 11,
+      "question": "What is the recommended duration of antibiotic therapy for cellulitis (nonpurulent)?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 12,
+      "question": "Which of the following is an important clinical consideration for orbital cellulitis?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 15,
+      "question": "What is the recommended duration of antibiotic therapy for osteomyelitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 16,
+      "question": "What is the recommended duration of antibiotic therapy for uncomplicated bloodstream infection?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 17,
+      "question": "What is the recommended duration of antibiotic therapy for unclear source?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 18,
+      "question": "Which of the following is a common pathogen causing purulent cellulitis/ abscess?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 19,
+      "question": "What is the recommended empiric antibiotic therapy for uti - pyelonephritis in standard treatment ca...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 20,
+      "question": "Which of the following is a common pathogen causing uncomplicated bloodstream infection?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 21,
+      "question": "Which of the following is an important clinical consideration for community- acquired pneumonia (cap...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 22,
+      "question": "What is the recommended duration of antibiotic therapy for suspected meningitis?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 23,
+      "question": "Which of the following is an important clinical consideration for osteomyelitis?...",
+      "issues": [
+        "Antibiotic 'clindamycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 24,
+      "question": "Which of the following is a common pathogen causing lymphadenitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 25,
+      "question": "What is the recommended empiric antibiotic therapy for orbital cellulitis in severe cases?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 26,
+      "question": "What is the recommended duration of antibiotic therapy for retropharyngeal abscess?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 27,
+      "question": "What is the recommended empiric antibiotic therapy for osteomyelitis in moderate/severe and low susp...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 28,
+      "question": "What is the recommended empiric antibiotic therapy for mastoiditis in standard cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 29,
+      "question": "Which of the following is an important clinical consideration for meningitis (non- neonates)?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 30,
+      "question": "What is the recommended duration of antibiotic therapy for purulent cellulitis/ abscess?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 31,
+      "question": "What is the recommended empiric antibiotic therapy for streptococcal pharyngitis in allergy cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 32,
+      "question": "Which of the following is a common pathogen causing preseptal cellulitis (ie, nonsinus origin)?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 33,
+      "question": "What is the recommended duration of antibiotic therapy for septic arthritis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 34,
+      "question": "What is the recommended empiric antibiotic therapy for community- acquired pneumonia (cap) in if mrs...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 35,
+      "question": "What is the recommended empiric antibiotic therapy for septic arthritis in severe and low suspicion ...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 36,
+      "question": "What is the recommended duration of antibiotic therapy for streptococcal pharyngitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 37,
+      "question": "Which of the following is an important clinical consideration for intra-abdominal infection?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 38,
+      "question": "What is the recommended duration of antibiotic therapy for community- acquired pneumonia (cap)?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 39,
+      "question": "What is the recommended empiric antibiotic therapy for retropharyngeal abscess in mild-moderate case...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 40,
+      "question": "Which of the following is a common pathogen causing suspected uti?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 41,
+      "question": "Which of the following is a common pathogen causing acute otitis media?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 42,
+      "question": "Which of the following is a common pathogen causing cellulitis (nonpurulent)?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 44,
+      "question": "Which of the following is a common pathogen causing septic arthritis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 45,
+      "question": "What is the recommended empiric antibiotic therapy for purulent cellulitis/ abscess in mild-moderate...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 46,
+      "question": "What is the recommended duration of antibiotic therapy for preseptal cellulitis (ie, nonsinus origin...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 48,
+      "question": "Which of the following is an important clinical consideration for septic arthritis?...",
+      "issues": [
+        "Antibiotic 'clindamycin' mentioned without proper clinical context",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 49,
+      "question": "Which of the following is a common pathogen causing community- acquired pneumonia (cap)?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 50,
+      "question": "Which of the following is a common pathogen causing mastoiditis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 51,
+      "question": "What is the recommended empiric antibiotic therapy for meningitis (non- neonates) in standard treatm...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 52,
+      "question": "What is the recommended duration of antibiotic therapy for lymphadenitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 53,
+      "question": "Which of the following is a common pathogen causing streptococcal pharyngitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 54,
+      "question": "What is the recommended empiric antibiotic therapy for cellulitis (nonpurulent) in severe cases?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 55,
+      "question": "What is the recommended duration of antibiotic therapy for acute sinusitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 56,
+      "question": "What is the recommended empiric antibiotic therapy for acute otitis media in standard cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 57,
+      "question": "Which of the following is a common pathogen causing suspected meningitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 58,
+      "question": "What is the recommended empiric antibiotic therapy for acute sinusitis in allergy cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 60,
+      "question": "What is the recommended duration of antibiotic therapy for orbital cellulitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 61,
+      "question": "Which of the following is a common pathogen causing acute sinusitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 62,
+      "question": "What is the recommended empiric antibiotic therapy for unclear source in neonates 0-7 days of age ca...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 63,
+      "question": "Which of the following is a common pathogen causing retropharyngeal abscess?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 64,
+      "question": "What is the recommended empiric antibiotic therapy for preseptal cellulitis (ie, nonsinus origin) in...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 65,
+      "question": "What is the recommended duration of antibiotic therapy for intra-abdominal infection?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 66,
+      "question": "Which of the following is a common pathogen causing meningitis (non- neonates)?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 67,
+      "question": "Which of the following is an important clinical consideration for purulent cellulitis/ abscess?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 70,
+      "question": "Which of the following is an important clinical consideration for retropharyngeal abscess?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 71,
+      "question": "What is the recommended empiric antibiotic therapy for suspected uti in standard treatment cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 72,
+      "question": "Which of the following is an important clinical consideration for preseptal cellulitis (ie, nonsinus...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 73,
+      "question": "What is the recommended empiric antibiotic therapy for lymphadenitis in allergy cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 74,
+      "question": "What is the recommended duration of antibiotic therapy for suspected uti?...",
+      "issues": [
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 75,
+      "question": "What is the recommended duration of antibiotic therapy for acute otitis media?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 76,
+      "question": "What is the recommended empiric antibiotic therapy for intra-abdominal infection in drainage cases?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    },
+    {
+      "question_index": 77,
+      "question": "Which of the following is a common pathogen causing orbital cellulitis?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 78,
+      "question": "Which of the following is a common pathogen causing osteomyelitis?...",
+      "issues": [
+        "Explanation lacks causal reasoning",
+        "Advanced question may be too simple"
+      ]
+    },
+    {
+      "question_index": 79,
+      "question": "Which of the following is a common pathogen causing intra-abdominal infection?...",
+      "issues": [
+        "Explanation too short - should provide more detail",
+        "Explanation lacks causal reasoning"
+      ]
+    }
+  ],
+  "summary": {
+    "difficulty_distribution": {
+      "beginner": 34,
+      "advanced": 35,
+      "intermediate": 10
+    },
+    "category_distribution": {
+      "Genitourinary": 4,
+      "Bloodstream Infection in Nonneonates": 4,
+      "Neonatal Fever (Term Neonates)": 11,
+      "Central Nervous System": 4,
+      "Skin and Soft Tissue Infections": 12,
+      "Ear, Nose, and Throat": 20,
+      "Ophthalmologic": 8,
+      "Bone/Joint": 8,
+      "Respiratory": 4,
+      "Intra-abdominal": 4
+    },
+    "pass_rate": 10.126582278481013
+  },
+  "recommendations": [
+    "Consider reviewing questions with issues for medical accuracy"
+  ]
+}
