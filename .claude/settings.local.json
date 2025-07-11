@@ -9,7 +9,9 @@
       "Bash(npm test:*)",
       "mcp__desktop-commander-user__search_code",
       "Bash(rm:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(npm:*)",
+      "Bash(python:*)"
     ],
     "deny": []
   }
