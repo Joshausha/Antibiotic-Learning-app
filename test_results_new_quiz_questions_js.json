@@ -1,140 +1,77 @@
 {
   "total_questions": 25,
-  "passed": 7,
-  "failed": 18,
+  "passed": 17,
+  "failed": 8,
   "issues": [
     {
       "question_index": 1,
-      "question": "A patient with skin infection has an isolate resistant to Azithromycin. What is the most likely resi...",
+      "question": "A 45-year-old diabetic patient presents with a 3-day history of cellulitis on the lower extremity. I...",
       "issues": [
-        "Antibiotic 'azithromycin' mentioned without proper clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 2,
-      "question": "A patient receiving Gentamicin develops Nephrotoxicity. What should be the next step in management?...",
-      "issues": [
-        "Antibiotic 'gentamicin' mentioned without proper clinical context"
-      ]
-    },
-    {
-      "question_index": 4,
-      "question": "Which antibiotic works by Protein synthesis inhibition (30S ribosome)?...",
-      "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 5,
-      "question": "Which antibiotic works by Protein synthesis inhibition (50S ribosome)?...",
-      "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 8,
-      "question": "A patient with pneumonia has an isolate resistant to Clindamycin. What is the most likely resistance...",
-      "issues": [
+        "Antibiotic 'cephalexin' mentioned without proper clinical context",
+        "Antibiotic 'ceftriaxone' mentioned without proper clinical context",
+        "Antibiotic 'vancomycin' mentioned without proper clinical context",
         "Antibiotic 'clindamycin' mentioned without proper clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 10,
-      "question": "A 74-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...",
-      "issues": [
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 12,
-      "question": "A patient receiving Azithromycin develops GI upset. What should be the next step in management?...",
-      "issues": [
         "Antibiotic 'azithromycin' mentioned without proper clinical context"
       ]
     },
     {
-      "question_index": 13,
-      "question": "A patient receiving Ciprofloxacin develops CNS effects. What should be the next step in management?...",
+      "question_index": 2,
+      "question": "A 68-year-old patient with hospital-acquired pneumonia has been receiving gentamicin 320mg IV every ...",
       "issues": [
-        "Antibiotic 'ciprofloxacin' mentioned without proper clinical context"
+        "Antibiotic 'ciprofloxacin' mentioned without proper clinical context",
+        "Antibiotic 'levofloxacin' mentioned without proper clinical context",
+        "Antibiotic 'gentamicin' mentioned without proper clinical context",
+        "Antibiotic 'meropenem' mentioned without proper clinical context",
+        "Antibiotic 'piperacillin-tazobactam' mentioned without proper clinical context",
+        "Antibiotic 'ceftazidime' mentioned without proper clinical context"
       ]
     },
     {
-      "question_index": 14,
-      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "question_index": 3,
+      "question": "A 74-year-old male with COPD and diabetes presents to the ED with a 3-day history of dyspnea, produc...",
       "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
+        "Pathogen 'chlamydia' mentioned without proper clinical context",
+        "Pathogen 'mycoplasma' mentioned without proper clinical context",
+        "Pathogen 'legionella' mentioned without proper clinical context"
       ]
     },
     {
-      "question_index": 15,
-      "question": "A 37-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...",
+      "question_index": 6,
+      "question": "A 34-year-old male with AIDS (CD4 count 85 cells/\u03bcL) presents to the ED with fever (39.2\u00b0C), severe ...",
       "issues": [
-        "Explanation lacks causal reasoning"
+        "Pathogen 'listeria monocytogenes' mentioned without proper clinical context"
       ]
     },
     {
-      "question_index": 16,
-      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
-      "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 18,
-      "question": "A patient with urinary tract infection has an isolate resistant to Vancomycin. What is the most like...",
+      "question_index": 8,
+      "question": "A 28-year-old patient with community-acquired pneumonia has a S. aureus isolate that shows erythromy...",
       "issues": [
         "Antibiotic 'vancomycin' mentioned without proper clinical context",
-        "Explanation lacks causal reasoning"
+        "Antibiotic 'clindamycin' mentioned without proper clinical context",
+        "Antibiotic 'erythromycin' mentioned without proper clinical context",
+        "Antibiotic 'trimethoprim-sulfamethoxazole' mentioned without proper clinical context",
+        "Antibiotic 'doxycycline' mentioned without proper clinical context"
       ]
     },
     {
-      "question_index": 20,
-      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
+      "question_index": 13,
+      "question": "A 65-year-old patient with complicated UTI was started on ciprofloxacin 500mg BID. On day 3, the pat...",
       "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 21,
-      "question": "Which antibiotic works by Cell wall synthesis inhibition?...",
-      "issues": [
-        "Question too short - may lack sufficient clinical context",
-        "Explanation lacks causal reasoning"
+        "Antibiotic 'ceftriaxone' mentioned without proper clinical context",
+        "Antibiotic 'ciprofloxacin' mentioned without proper clinical context",
+        "Antibiotic 'piperacillin-tazobactam' mentioned without proper clinical context"
       ]
     },
     {
       "question_index": 22,
-      "question": "A 76-year-old male presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains. ...",
+      "question": "A 76-year-old male with COPD presents with acute onset fever (39.1\u00b0C), chills, and productive cough ...",
       "issues": [
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 23,
-      "question": "A patient with bloodstream infection has an isolate resistant to Vancomycin. What is the most likely...",
-      "issues": [
-        "Antibiotic 'vancomycin' mentioned without proper clinical context",
-        "Explanation lacks causal reasoning"
-      ]
-    },
-    {
-      "question_index": 24,
-      "question": "A 76-year-old male presents with cough and dyspnea. Gram stain shows Positive Cocci in Clusters. Wha...",
-      "issues": [
-        "Explanation lacks causal reasoning"
+        "Beginner question contains advanced term: 'mechanism'"
       ]
     },
     {
       "question_index": 25,
-      "question": "A patient receiving Ceftriaxone develops Biliary sludging. What should be the next step in managemen...",
+      "question": "A 8-year-old child with bacterial meningitis has been receiving ceftriaxone 100mg/kg/day for 5 days....",
       "issues": [
         "Antibiotic 'ceftriaxone' mentioned without proper clinical context"
       ]
@@ -153,7 +90,7 @@
       "Antibiotic Mechanisms": 6,
       "Pathogen Identification": 4
     },
-    "pass_rate": 28.000000000000004
+    "pass_rate": 68.0
   },
   "recommendations": [
     "Consider reviewing questions with issues for medical accuracy"

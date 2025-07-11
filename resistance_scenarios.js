@@ -18,7 +18,7 @@ const resistanceScenarios = [
       "Switch to vancomycin monotherapy"
     ],
     "correct": 0,
-    "explanation": "CRE (carbapenem-resistant Enterobacterales) infections require combination therapy due to limited treatment options. Colistin and tigecycline combination is often used, though newer agents like ceftazidime-avibactam may be effective against certain carbapenemases. High mortality rates make aggressive combination therapy necessary.",
+    "explanation": "CRE (carbapenem-resistant Enterobacterales) infections require combination therapy due to limited treatment options. Klebsiella pneumoniae carbapenemase (KPC) production renders carbapenems ineffective by hydrolyzing the beta-lactam ring. This organism typically exhibits multidrug resistance including fluoroquinolones and aminoglycosides. Colistin (polymyxin E) disrupts bacterial cell membranes and tigecycline (glycylcycline) inhibits protein synthesis at the 30S ribosome. Combination therapy is necessary due to high mortality rates (>50%) and limited monotherapy options. Newer agents like ceftazidime-avibactam may be effective against certain carbapenemases.",
     "category": "Antibiotic Resistance Scenarios",
     "difficulty": "advanced",
     "conditionId": "cre_resistance",
@@ -33,7 +33,7 @@ const resistanceScenarios = [
       "Teicoplanin therapy"
     ],
     "correct": 2,
-    "explanation": "VRE (vancomycin-resistant enterococci) infections require alternative agents. Linezolid and daptomycin are first-line treatments for VRE bacteremia. The vanA gene cluster confers high-level resistance to vancomycin and teicoplanin. Combination therapy with vancomycin is ineffective.",
+    "explanation": "VRE (vancomycin-resistant enterococci) infections require alternative agents. Enterococcus faecium with vanA gene cluster produces enzymes that synthesize D-alanyl-D-lactate instead of D-alanyl-D-alanine precursors, reducing vancomycin binding affinity by 1000-fold. This confers high-level resistance to both vancomycin and teicoplanin. Linezolid (oxazolidinone) inhibits protein synthesis by binding to the 23S rRNA of the 50S ribosome, while daptomycin (cyclic lipopeptide) disrupts cell membrane potential. Both are first-line treatments for VRE bacteremia. Prolonged vancomycin exposure in immunocompromised patients is a major risk factor for VRE emergence.",
     "category": "Antibiotic Resistance Scenarios",
     "difficulty": "advanced",
     "conditionId": "vre_resistance",
@@ -48,7 +48,7 @@ const resistanceScenarios = [
       "Aminoglycoside-modifying enzymes"
     ],
     "correct": 0,
-    "explanation": "ESBL-producing organisms produce enzymes that hydrolyze extended-spectrum cephalosporins and aztreonam. This resistance pattern is increasingly common in E. coli and Klebsiella, especially in patients with prior antibiotic exposure or travel to endemic areas. Carbapenems are the treatment of choice.",
+    "explanation": "ESBL-producing organisms produce enzymes that hydrolyze extended-spectrum cephalosporins and aztreonam. Klebsiella pneumoniae commonly produces CTX-M, SHV, or TEM-type ESBLs that confer resistance to third-generation cephalosporins, aztreonam, and often fluoroquinolones. This resistance pattern is highly endemic in South Asia, with hospitalization and antibiotic exposure being major risk factors. The 'ESBL phenotype' includes resistance to cephalosporins but susceptibility to carbapenems and cephamycins. Carbapenems (meropenem, ertapenem) are the treatment of choice for ESBL-producing Enterobacterales, though carbapenem-sparing alternatives like piperacillin-tazobactam may be considered for less severe infections.",
     "category": "Antibiotic Resistance Scenarios",
     "difficulty": "advanced",
     "conditionId": "esbl_resistance",

@@ -1,11 +1,11 @@
 
 === COMPREHENSIVE CONTENT QUALITY REPORT ===
-Generated on: 2025-07-08 14:13:19
+Generated on: 2025-07-11 12:37:45
 
 === OVERALL SUMMARY ===
 Total Questions Across All Files: 119
-Total Passed: 21 (17.6%)
-Total Failed: 98 (82.4%)
+Total Passed: 31 (26.1%)
+Total Failed: 88 (73.9%)
 
 === FILE-BY-FILE RESULTS ===
 
@@ -13,12 +13,12 @@ Total Failed: 98 (82.4%)
 NEW_QUIZ_QUESTIONS.JS
 ==================================================
 === CONTENT QUALITY TEST REPORT ===
-Generated on: 2025-07-08 14:13:19
+Generated on: 2025-07-11 12:37:45
 
 === SUMMARY ===
 Total Questions Tested: 25
-Passed: 7 (28.0%)
-Failed: 18 (72.0%)
+Passed: 17 (68.0%)
+Failed: 8 (32.0%)
 
 === DIFFICULTY DISTRIBUTION ===
 Advanced: 4 (16.0%)
@@ -34,40 +34,46 @@ Pathogen Identification: 4 (16.0%)
 
 === IDENTIFIED ISSUES ===
 
-Question 1: A patient with skin infection has an isolate resistant to Azithromycin. What is the most likely resi...
-  • Antibiotic 'azithromycin' mentioned without proper clinical context
-  • Explanation lacks causal reasoning
-
-Question 2: A patient receiving Gentamicin develops Nephrotoxicity. What should be the next step in management?...
-  • Antibiotic 'gentamicin' mentioned without proper clinical context
-
-Question 4: Which antibiotic works by Protein synthesis inhibition (30S ribosome)?...
-  • Question too short - may lack sufficient clinical context
-  • Explanation lacks causal reasoning
-
-Question 5: Which antibiotic works by Protein synthesis inhibition (50S ribosome)?...
-  • Question too short - may lack sufficient clinical context
-  • Explanation lacks causal reasoning
-
-Question 8: A patient with pneumonia has an isolate resistant to Clindamycin. What is the most likely resistance...
+Question 1: A 45-year-old diabetic patient presents with a 3-day history of cellulitis on the lower extremity. I...
+  • Antibiotic 'cephalexin' mentioned without proper clinical context
+  • Antibiotic 'ceftriaxone' mentioned without proper clinical context
+  • Antibiotic 'vancomycin' mentioned without proper clinical context
   • Antibiotic 'clindamycin' mentioned without proper clinical context
-  • Explanation lacks causal reasoning
-
-Question 10: A 74-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...
-  • Explanation lacks causal reasoning
-
-Question 12: A patient receiving Azithromycin develops GI upset. What should be the next step in management?...
   • Antibiotic 'azithromycin' mentioned without proper clinical context
 
-Question 13: A patient receiving Ciprofloxacin develops CNS effects. What should be the next step in management?...
+Question 2: A 68-year-old patient with hospital-acquired pneumonia has been receiving gentamicin 320mg IV every ...
   • Antibiotic 'ciprofloxacin' mentioned without proper clinical context
+  • Antibiotic 'levofloxacin' mentioned without proper clinical context
+  • Antibiotic 'gentamicin' mentioned without proper clinical context
+  • Antibiotic 'meropenem' mentioned without proper clinical context
+  • Antibiotic 'piperacillin-tazobactam' mentioned without proper clinical context
+  • Antibiotic 'ceftazidime' mentioned without proper clinical context
 
-Question 14: Which antibiotic works by Cell wall synthesis inhibition?...
-  • Question too short - may lack sufficient clinical context
-  • Explanation lacks causal reasoning
+Question 3: A 74-year-old male with COPD and diabetes presents to the ED with a 3-day history of dyspnea, produc...
+  • Pathogen 'chlamydia' mentioned without proper clinical context
+  • Pathogen 'mycoplasma' mentioned without proper clinical context
+  • Pathogen 'legionella' mentioned without proper clinical context
 
-Question 15: A 37-year-old female presents with fever and chills. Gram stain shows Positive Cocci in Pairs/chains...
-  • Explanation lacks causal reasoning
+Question 6: A 34-year-old male with AIDS (CD4 count 85 cells/μL) presents to the ED with fever (39.2°C), severe ...
+  • Pathogen 'listeria monocytogenes' mentioned without proper clinical context
+
+Question 8: A 28-year-old patient with community-acquired pneumonia has a S. aureus isolate that shows erythromy...
+  • Antibiotic 'vancomycin' mentioned without proper clinical context
+  • Antibiotic 'clindamycin' mentioned without proper clinical context
+  • Antibiotic 'erythromycin' mentioned without proper clinical context
+  • Antibiotic 'trimethoprim-sulfamethoxazole' mentioned without proper clinical context
+  • Antibiotic 'doxycycline' mentioned without proper clinical context
+
+Question 13: A 65-year-old patient with complicated UTI was started on ciprofloxacin 500mg BID. On day 3, the pat...
+  • Antibiotic 'ceftriaxone' mentioned without proper clinical context
+  • Antibiotic 'ciprofloxacin' mentioned without proper clinical context
+  • Antibiotic 'piperacillin-tazobactam' mentioned without proper clinical context
+
+Question 22: A 76-year-old male with COPD presents with acute onset fever (39.1°C), chills, and productive cough ...
+  • Beginner question contains advanced term: 'mechanism'
+
+Question 25: A 8-year-old child with bacterial meningitis has been receiving ceftriaxone 100mg/kg/day for 5 days....
+  • Antibiotic 'ceftriaxone' mentioned without proper clinical context
 
 === RECOMMENDATIONS ===
 • Consider reviewing questions with issues for medical accuracy
@@ -77,7 +83,7 @@ Question 15: A 37-year-old female presents with fever and chills. Gram stain sho
 RESISTANCE_SCENARIOS.JS
 ==================================================
 === CONTENT QUALITY TEST REPORT ===
-Generated on: 2025-07-08 14:13:19
+Generated on: 2025-07-11 12:37:45
 
 === SUMMARY ===
 Total Questions Tested: 15
@@ -132,7 +138,7 @@ Question 15: A 72-year-old male in the ICU with septic shock has been on meropen
 SRC/DATA/QUIZQUESTIONSWITHDIFFICULTY.JS
 ==================================================
 === CONTENT QUALITY TEST REPORT ===
-Generated on: 2025-07-08 14:13:19
+Generated on: 2025-07-11 12:37:45
 
 === SUMMARY ===
 Total Questions Tested: 79
