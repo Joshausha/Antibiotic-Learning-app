@@ -67,6 +67,14 @@ Located in `/src/data/` - All medical data is stored as JavaScript modules:
 
 ## Recent Enhancements
 
+### Data Quality Improvements (July 11, 2025)
+- **CRITICAL FIXES**: Resolved 2 major data validation issues
+  - Fixed empty option in intra-abdominal infection question (Question 79)
+  - Fixed invalid pathogen data in osteomyelitis question (Question 80)
+- **Enhanced Medical Accuracy**: Updated explanations with clinical context
+- **Improved Antibiotic Recommendations**: Aligned with current clinical guidelines
+- **Data Validation**: Corrected false positive "missing correct field" reports
+
 ### Tailwind CSS Migration
 - Migrated from CDN to local installation
 - Custom configuration in `tailwind.config.js`

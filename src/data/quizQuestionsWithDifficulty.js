@@ -1062,13 +1062,13 @@ const quizQuestionsWithDifficulty = [
   {
     "question": "What is the recommended empiric antibiotic therapy for intra-abdominal infection in drainage cases?",
     "options": [
-      "",
+      "Piperacillin-tazobactam",
       "Amoxicillin-clavulanate",
       "Ciprofloxacin",
       "Azithromycin"
     ],
     "correct": 0,
-    "explanation": "For intra-abdominal infection (drainage), the recommended therapy is: ",
+    "explanation": "For intra-abdominal infection with drainage, piperacillin-tazobactam is the recommended empiric therapy. This broad-spectrum beta-lactam/beta-lactamase inhibitor combination provides excellent coverage against gram-negative bacilli, anaerobes, and many gram-positive organisms commonly found in intra-abdominal infections. The drainage component indicates a complex infection requiring robust antimicrobial coverage.",
     "category": "Intra-abdominal",
     "conditionId": "intra_abdominal_infection",
     "difficulty": "beginner"

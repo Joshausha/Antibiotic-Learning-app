@@ -988,13 +988,13 @@ const quizQuestions = [
   {
     "question": "What is the recommended empiric antibiotic therapy for intra-abdominal infection in drainage cases?",
     "options": [
-      "",
+      "Piperacillin-tazobactam",
       "Amoxicillin-clavulanate",
       "Ciprofloxacin",
       "Azithromycin"
     ],
     "correct": 0,
-    "explanation": "For intra-abdominal infection (drainage), the recommended therapy is: ",
+    "explanation": "For intra-abdominal infection with drainage, piperacillin-tazobactam is the recommended empiric therapy. This broad-spectrum beta-lactam/beta-lactamase inhibitor combination provides excellent coverage against gram-negative bacilli, anaerobes, and many gram-positive organisms commonly found in intra-abdominal infections. The drainage component indicates a complex infection requiring robust antimicrobial coverage.",
     "category": "Intra-abdominal",
     "conditionId": "intra_abdominal_infection"
   },
@@ -1014,13 +1014,13 @@ const quizQuestions = [
   {
     "question": "Which of the following is a common pathogen causing osteomyelitis?",
     "options": [
-      "RCTs for duration of gram- negative BSI: Yahav et al¹, von Dach et al², Molina et als",
+      "Staphylococcus aureus",
       "Enterococcus faecalis",
       "Streptococcus pneumoniae",
       "Haemophilus influenzae"
     ],
     "correct": 0,
-    "explanation": "RCTs for duration of gram- negative BSI: Yahav et al¹, von Dach et al², Molina et als is a common pathogen causing osteomyelitis.",
+    "explanation": "Staphylococcus aureus is the most common pathogen causing osteomyelitis, particularly in adults and children. This gram-positive cocci has a particular affinity for bone tissue and can cause both acute and chronic osteomyelitis. S. aureus produces various virulence factors including adhesins that allow it to bind to bone matrix, and toxins that cause bone destruction. Both methicillin-sensitive (MSSA) and methicillin-resistant (MRSA) strains can cause osteomyelitis.",
     "category": "Bone/Joint",
     "conditionId": "osteomyelitis"
   },
