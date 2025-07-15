@@ -482,9 +482,9 @@ const PathogenNetworkVisualization = ({
                 className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="all">All</option>
-                <option value="high">High (>50%)</option>
+                <option value="high">High (&gt;50%)</option>
                 <option value="medium">Medium (25-50%)</option>
-                <option value="low">Low (<25%)</option>
+                <option value="low">Low (&lt;25%)</option>
               </select>
             </div>
 
@@ -992,7 +992,7 @@ const PathogenNetworkVisualization = ({
             <div className="font-semibold text-gray-700">Resistance</div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full border-2 border-red-600"></div>
-              <span>High (>50%)</span>
+              <span>High (&gt;50%)</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full border-2 border-yellow-500"></div>
@@ -1000,7 +1000,7 @@ const PathogenNetworkVisualization = ({
             </div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full border-2 border-green-600"></div>
-              <span>Low (<25%)</span>
+              <span>Low (&lt;25%)</span>
             </div>
           </div>
           
