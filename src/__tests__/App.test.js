@@ -11,7 +11,7 @@ import App from '../App';
 // Mock the custom hook
 jest.mock('../hooks/useResponsive', () => ({
   __esModule: true,
-  default: () => false, // Default to desktop
+  default: jest.fn(() => false), // Default to desktop, but allow mocking
 }));
 
 describe('App Component Integration Tests', () => {
@@ -31,14 +31,14 @@ describe('App Component Integration Tests', () => {
     // Start on home tab
     expect(screen.getByText(/medical learning app/i)).toBeInTheDocument();
     
-    // Navigate to conditions tab - use more specific selector to avoid multiple matches
-    const conditionsTab = screen.getAllByText(/conditions/i)[0];
+    // Navigate to conditions tab
+    const conditionsTab = screen.getByRole('link', { name: /conditions/i });
     fireEvent.click(conditionsTab);
     expect(screen.getByPlaceholderText(/search conditions/i)).toBeInTheDocument();
     
     // Skip quiz tab test for now due to data loading issues
-    // Navigate back to home - use more specific selector to avoid multiple matches
-    const homeTab = screen.getAllByText(/home/i)[0];
+    // Navigate back to home
+    const homeTab = screen.getByRole('link', { name: /home/i });
     fireEvent.click(homeTab);
     expect(screen.getByText(/medical learning app/i)).toBeInTheDocument();
   });
@@ -162,14 +162,17 @@ describe('App Component Integration Tests', () => {
   });
 
   test('responsive design integration', () => {
-    // Re-render with mobile mock
-    const useResponsive = require('../hooks/useResponsive').default;
-    useResponsive.mockReturnValue(true); // Mobile
+    // Mock mobile viewport
+    jest.mock('../hooks/useResponsive', () => ({
+      __esModule: true,
+      default: jest.fn(() => true),
+    }));
     
     render(<App />);
     
-    // Should render mobile-specific elements
-    expect(screen.getByLabelText(/toggle menu/i)).toBeInTheDocument();
+    // Should show mobile menu button
+    const menuButton = screen.getByLabelText(/toggle menu/i);
+    expect(menuButton).toBeInTheDocument();
   });
 
   test('navigation reflects active tab state', () => {
@@ -394,9 +397,9 @@ describe('App Component Integration Tests', () => {
     
     // Rapidly switch between tabs multiple times
     for (let i = 0; i < 10; i++) {
-      fireEvent.click(screen.getByText(/conditions/i));
-      fireEvent.click(screen.getByText(/quiz/i));
-      fireEvent.click(screen.getByText(/home/i));
+      fireEvent.click(screen.getByRole('link', { name: /conditions/i }));
+      fireEvent.click(screen.getByRole('link', { name: /quiz/i }));
+      fireEvent.click(screen.getByRole('link', { name: /home/i }));
     }
     
     const endTime = performance.now();
