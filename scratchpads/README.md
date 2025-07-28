@@ -1,3 +1,17 @@
+---
+type: project
+title: Scratchpads System Documentation
+created: 2025-07-11
+modified: 2025-07-16
+tags: [documentation, scratchpads, issue-tracking, project-management, workflow, antibiotic-app, github, claude-code, development-process]
+project: antibiotic-learning-app
+status: active
+priority: medium
+category: documentation
+format: readme
+scope: scratchpad-system
+---
+
 # Scratchpads System
 
 This directory contains planning scratchpads for Claude Code to organize and track work on GitHub issues.

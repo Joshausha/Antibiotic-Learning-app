@@ -1,3 +1,20 @@
+---
+type: project
+title: "Issue #1: Fix Quiz Question Validation Failures (17.6% Pass Rate)"
+created: 2025-07-11
+modified: 2025-07-16
+tags: [issue-tracking, quiz-validation, medical-accuracy, content-quality, github-issue, antibiotic-app, clinical-context, evidence-based, medical-education]
+project: antibiotic-learning-app
+status: active
+priority: critical
+category: issue-tracking
+github_issue: 1
+issue_status: in-progress
+pass_rate: 68.0
+target_pass_rate: 90.0
+assignee: claude-code
+---
+
 # Issue #1: Fix Quiz Question Validation Failures (17.6% Pass Rate)
 
 ## Issue Context

@@ -8,6 +8,8 @@
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "lint": "NODE_ENV=development eslint src/ --ext .js,.jsx",
+    "lint:fix": "NODE_ENV=development eslint src/ --ext .js,.jsx --fix",
     "serve": "npx serve -s build -p 3000",
     "build:serve": "npm run build && npm run serve",
     "test:coverage": "node scripts/test.js --coverage --watchAll=false",

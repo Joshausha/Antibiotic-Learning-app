@@ -1,3 +1,17 @@
+---
+type: project
+title: Issue Template - Antibiotic Learning App
+created: 2025-07-11
+modified: 2025-07-16
+tags: [template, issue-tracking, github, project-management, medical-education, antibiotic-app, development-workflow, quality-assurance]
+project: antibiotic-learning-app
+status: active
+priority: medium
+category: template
+template_type: issue-tracking
+format: github-issue-template
+---
+
 # Issue #{NUMBER}: {TITLE}
 
 ## Issue Context
