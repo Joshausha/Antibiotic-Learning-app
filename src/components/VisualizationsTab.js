@@ -4,7 +4,7 @@
  * Provides multiple visualization types for exploring medical data relationships
  */
 
-import React, { memo, useState, Suspense, lazy } from 'react';
+import React, { memo, useState } from 'react';
 import { 
   BarChart3, 
   Network, 
@@ -20,8 +20,8 @@ import {
 import LoadingSpinner from './LoadingSpinner';
 import ErrorBoundary from './ErrorBoundary';
 
-// Lazy load heavy visualization components
-const PathogenNetworkVisualization = lazy(() => import('./PathogenNetworkVisualization'));
+// Import simple network component
+import SimplePathogenNetwork from './SimplePathogenNetwork';
 
 const VisualizationsTab = ({ 
   pathogenData,
@@ -322,24 +322,7 @@ const VisualizationsTab = ({
         Pathogen Relationship Network
       </h3>
       <ErrorBoundary>
-        <Suspense fallback={<LoadingSpinner />}>
-          {pathogenData?.network ? (
-            <PathogenNetworkVisualization
-              network={pathogenData.network}
-              selectedPathogen={pathogenData.selectedPathogen}
-              onSelectPathogen={onSelectPathogen}
-              onShowPathDetails={(pathogen) => console.log('Show details for:', pathogen)}
-            />
-          ) : (
-            <div className="flex items-center justify-center h-64 bg-gray-50 rounded-lg">
-              <div className="text-center text-gray-500">
-                <Network size={64} className="mx-auto mb-4 opacity-50" />
-                <p>Network visualization loading...</p>
-                <p className="text-sm">Building pathogen relationship graph</p>
-              </div>
-            </div>
-          )}
-        </Suspense>
+        <SimplePathogenNetwork pathogenData={pathogenData} />
       </ErrorBoundary>
     </div>
   );

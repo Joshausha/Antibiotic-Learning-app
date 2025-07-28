@@ -8,7 +8,7 @@
  * Analyzes user behavior patterns from interaction history
  */
 export const analyzeBehaviorPatterns = (userBehavior) => {
-  if (!userBehavior.history || userBehavior.history.length === 0) {
+  if (!userBehavior || !userBehavior.history || userBehavior.history.length === 0) {
     return {
       mostViewedCategories: [],
       gramStatusPreference: null,
@@ -94,7 +94,7 @@ export const calculatePathogenRecommendations = (indexes, selectedPathogen, beha
   })));
 
   // Get recommendations based on user preferences
-  if (behaviorAnalysis.mostViewedCategories.length > 0) {
+  if (behaviorAnalysis && behaviorAnalysis.mostViewedCategories && behaviorAnalysis.mostViewedCategories.length > 0) {
     const categoryRecommendations = findPathogensByCategories(
       indexes, 
       behaviorAnalysis.mostViewedCategories
@@ -244,7 +244,7 @@ export const generateLearningPath = (indexes, userPreferences, behaviorAnalysis)
 
   const learningPath = [];
   
-  if (userPreferences.systematicLearning) {
+  if (userPreferences && userPreferences.systematicLearning) {
     // Create systematic progression by gram status
     const gramPositive = indexes.pathogens?.filter(p => p.gramStatus === 'Positive') || [];
     const gramNegative = indexes.pathogens?.filter(p => p.gramStatus === 'Negative') || [];
@@ -262,7 +262,7 @@ export const generateLearningPath = (indexes, userPreferences, behaviorAnalysis)
     });
   } else {
     // Create interest-based learning path
-    if (behaviorAnalysis.mostViewedCategories.length > 0) {
+    if (behaviorAnalysis && behaviorAnalysis.mostViewedCategories && behaviorAnalysis.mostViewedCategories.length > 0) {
       behaviorAnalysis.mostViewedCategories.forEach(category => {
         const categoryPathogens = findPathogensByCategories(indexes, [category]);
         if (categoryPathogens.length > 0) {
@@ -283,6 +283,16 @@ export const generateLearningPath = (indexes, userPreferences, behaviorAnalysis)
  * Categorizes recommendations for better organization
  */
 export const categorizeRecommendations = (recommendations, selectedPathogen) => {
+  if (!recommendations || !Array.isArray(recommendations)) {
+    return {
+      'Similar': [],
+      'Your Interests': [],
+      'Next Level': [],
+      'Recently Popular': [],
+      'Discover': []
+    };
+  }
+  
   const categorized = {
     'Similar': recommendations.filter(r => r.category === 'Similar'),
     'Your Interests': recommendations.filter(r => r.category === 'Your Interests'),

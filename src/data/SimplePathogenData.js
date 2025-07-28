@@ -114,6 +114,215 @@ const simplePathogens = [
     commonSites: ["Colon"],
     resistance: "Spore-forming, survives antibiotics",
     severity: "medium"
+  },
+  {
+    id: 11,
+    name: "Enterococcus faecium",
+    commonName: "E. faecium",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Hospital-acquired enterococcal infections, often multidrug-resistant",
+    commonSites: ["Urinary tract", "Blood", "Abdomen", "Wounds"],
+    resistance: "VRE (vancomycin-resistant) strains common",
+    severity: "high"
+  },
+  {
+    id: 12,
+    name: "Neisseria meningitidis",
+    commonName: "Meningococcus",
+    gramStatus: "negative",
+    shape: "cocci",
+    description: "Causes meningitis and septicemia, medical emergency",
+    commonSites: ["Brain", "Blood", "Throat"],
+    resistance: "Generally susceptible to penicillin",
+    severity: "high"
+  },
+  {
+    id: 13,
+    name: "Moraxella catarrhalis",
+    commonName: "M. catarrhalis",
+    gramStatus: "negative",
+    shape: "cocci",
+    description: "Respiratory tract infections, especially in children and elderly",
+    commonSites: ["Sinuses", "Ears", "Lungs"],
+    resistance: "Beta-lactamase producing strains",
+    severity: "low"
+  },
+  {
+    id: 14,
+    name: "Mycoplasma pneumoniae",
+    commonName: "Mycoplasma",
+    gramStatus: "atypical",
+    shape: "pleomorphic",
+    description: "Atypical pneumonia, walking pneumonia",
+    commonSites: ["Lungs", "Upper respiratory tract"],
+    resistance: "Macrolide-resistant strains emerging",
+    severity: "medium"
+  },
+  {
+    id: 15,
+    name: "Streptococcus anginosus",
+    commonName: "S. anginosus",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Part of anginosus group, causes abscesses and deep tissue infections",
+    commonSites: ["Deep tissues", "Abscesses", "Dental infections"],
+    resistance: "Generally penicillin-susceptible",
+    severity: "medium"
+  },
+  {
+    id: 16,
+    name: "Kingella kingae",
+    commonName: "K. kingae",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Pediatric pathogen causing bone and joint infections",
+    commonSites: ["Bones", "Joints", "Blood"],
+    resistance: "Not reliably susceptible to oxacillin/nafcillin",
+    severity: "medium"
+  },
+  {
+    id: 17,
+    name: "Staphylococcus saprophyticus",
+    commonName: "S. saprophyticus",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Common cause of urinary tract infections in young women",
+    commonSites: ["Urinary tract"],
+    resistance: "Generally susceptible to most antibiotics",
+    severity: "low"
+  },
+  {
+    id: 18,
+    name: "Coagulase-negative Staphylococcus",
+    commonName: "CoNS",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Opportunistic pathogen, common in device-related infections",
+    commonSites: ["Blood", "Medical devices", "Skin"],
+    resistance: "Often methicillin-resistant",
+    severity: "medium"
+  },
+  {
+    id: 19,
+    name: "Bartonella species",
+    commonName: "Bartonella",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Cat-scratch disease and other zoonotic infections",
+    commonSites: ["Lymph nodes", "Skin", "Blood"],
+    resistance: "Generally susceptible to macrolides",
+    severity: "low"
+  },
+  {
+    id: 20,
+    name: "Fusobacterium species",
+    commonName: "Fusobacterium",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Anaerobic pathogen causing head and neck infections",
+    commonSites: ["Throat", "Dental", "Head and neck"],
+    resistance: "Generally susceptible to penicillin",
+    severity: "medium"
+  },
+  {
+    id: 21,
+    name: "Group B Streptococcus",
+    commonName: "GBS",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Neonatal sepsis and meningitis, maternal infections",
+    commonSites: ["Blood", "Brain", "Urinary tract"],
+    resistance: "Generally penicillin-susceptible",
+    severity: "high"
+  },
+  {
+    id: 22,
+    name: "Enterobacter species",
+    commonName: "Enterobacter",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Hospital-acquired infections, intrinsic AmpC resistance",
+    commonSites: ["Urinary tract", "Blood", "Respiratory tract"],
+    resistance: "AmpC beta-lactamases, carbapenem resistance",
+    severity: "high"
+  },
+  {
+    id: 23,
+    name: "Citrobacter species",
+    commonName: "Citrobacter",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Opportunistic gram-negative pathogen",
+    commonSites: ["Urinary tract", "Blood", "Wounds"],
+    resistance: "AmpC beta-lactamases",
+    severity: "medium"
+  },
+  {
+    id: 24,
+    name: "Proteus species",
+    commonName: "Proteus",
+    gramStatus: "negative",
+    shape: "rod",
+    description: "Urinary tract infections, kidney stone formation",
+    commonSites: ["Urinary tract", "Wounds"],
+    resistance: "Intrinsic resistance to nitrofurantoin",
+    severity: "medium"
+  },
+  {
+    id: 25,
+    name: "Microaerophilic streptococci",
+    commonName: "Microaerophilic strep",
+    gramStatus: "positive",
+    shape: "cocci",
+    description: "Oral flora causing head and neck infections",
+    commonSites: ["Oral cavity", "Head and neck", "Dental"],
+    resistance: "Generally penicillin-susceptible",
+    severity: "low"
+  },
+  {
+    id: 26,
+    name: "Nontuberculous mycobacteria",
+    commonName: "NTM",
+    gramStatus: "acid-fast",
+    shape: "rod",
+    description: "Environmental mycobacteria causing lymphadenitis and pulmonary disease",
+    commonSites: ["Lymph nodes", "Lungs", "Skin"],
+    resistance: "Complex resistance patterns, requires specialized testing",
+    severity: "medium"
+  },
+  {
+    id: 27,
+    name: "Anaerobes",
+    commonName: "Anaerobic bacteria",
+    gramStatus: "mixed",
+    shape: "various",
+    description: "Mixed anaerobic flora in abscesses and polymicrobial infections",
+    commonSites: ["Abdomen", "Pelvis", "Deep tissues", "Oral cavity"],
+    resistance: "Variable, often sensitive to metronidazole",
+    severity: "medium"
+  },
+  {
+    id: 28,
+    name: "Herpes Simplex Virus",
+    commonName: "HSV",
+    gramStatus: "virus",
+    shape: "enveloped",
+    description: "DNA virus causing neonatal infections and encephalitis",
+    commonSites: ["Brain", "Skin", "Mucous membranes", "Genital tract"],
+    resistance: "Antiviral resistance (acyclovir)",
+    severity: "high"
+  },
+  {
+    id: 29,
+    name: "Respiratory viruses",
+    commonName: "Respiratory viruses",
+    gramStatus: "virus",
+    shape: "various",
+    description: "Including influenza, adenovirus, RSV, coronavirus, human metapneumovirus",
+    commonSites: ["Respiratory tract", "Lungs"],
+    resistance: "Variable antiviral resistance",
+    severity: "medium"
   }
 ];
 

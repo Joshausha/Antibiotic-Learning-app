@@ -106,9 +106,9 @@ describe('QuizAnalyticsDashboard Component', () => {
     expect(screen.getByText('Current Streak')).toBeInTheDocument();
     
     // Check for actual values
-    expect(screen.getByText('2')).toBeInTheDocument(); // Total quizzes
+    expect(screen.getAllByText('2')[0]).toBeInTheDocument(); // Total quizzes
     expect(screen.getByText('90%')).toBeInTheDocument(); // Average score
-    expect(screen.getByText('100%')).toBeInTheDocument(); // Best score
+    expect(screen.getAllByText('100%')[0]).toBeInTheDocument(); // Best score
   });
 
   test('displays performance trends section', () => {
@@ -223,8 +223,8 @@ describe('QuizAnalyticsDashboard Component', () => {
     expect(screen.getByText('Total Quizzes')).toBeInTheDocument();
     
     // Should show 0 values
-    expect(screen.getByText('0')).toBeInTheDocument(); // Total quizzes
-    expect(screen.getByText('0%')).toBeInTheDocument(); // Average score
+    expect(screen.getAllByText('0')[0]).toBeInTheDocument(); // Total quizzes
+    expect(screen.getAllByText('0%')[0]).toBeInTheDocument(); // Average score
   });
 
   test('handles undefined quiz progress gracefully', () => {

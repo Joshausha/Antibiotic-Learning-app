@@ -25,46 +25,18 @@ export const AppProvider = ({ children }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   // Initialize error handler
-  const { withErrorHandling, fallbacks } = useErrorHandler();
+  const { fallbacks } = useErrorHandler();
 
-  // Initialize all hooks with error handling
-  const isMobile = withErrorHandling(
-    () => useResponsive(),
-    false,
-    'useResponsive'
-  );
-
-  const quizProgress = withErrorHandling(
-    () => useQuizProgress(),
-    fallbacks.quizProgress,
-    'useQuizProgress'
-  );
-
-  const bookmarks = withErrorHandling(
-    () => useBookmarks(),
-    fallbacks.bookmarks,
-    'useBookmarks'
-  );
-
-  const pathogenData = withErrorHandling(
-    () => usePathogenData(medicalConditions),
-    fallbacks.pathogenData,
-    'usePathogenData'
-  );
-
-  const antibioticData = withErrorHandling(
-    () => useAntibioticData(medicalConditions),
-    fallbacks.antibioticData,
-    'useAntibioticData'
-  );
+  // Initialize all hooks directly (React hook rules require direct calls)
+  const isMobile = useResponsive();
+  const quizProgress = useQuizProgress();
+  const bookmarks = useBookmarks();
+  const pathogenData = usePathogenData(medicalConditions);
+  const antibioticData = useAntibioticData(medicalConditions);
 
   // Search functionality for conditions
   const searchFields = ['name', 'category', 'commonPathogens', 'description'];
-  const searchData = withErrorHandling(
-    () => useSearch(medicalConditions, searchFields),
-    fallbacks.searchData(medicalConditions),
-    'useSearch'
-  );
+  const searchData = useSearch(medicalConditions, searchFields);
 
   // Context value object
   const contextValue = {

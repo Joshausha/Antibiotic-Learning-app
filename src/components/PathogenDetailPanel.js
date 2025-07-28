@@ -28,6 +28,25 @@ const PathogenDetailPanel = ({
   const [selectedComparison, setSelectedComparison] = useState(null);
   const [treatmentFilter, setTreatmentFilter] = useState('all');
 
+  // Calculate pathogen complexity score
+  const complexityScore = useMemo(() => {
+    if (!pathogen || !associatedConditions || !treatmentOptions || !similarPathogens) {
+      return { total: 0, factors: { conditions: 0, treatments: 0, connections: 0 } };
+    }
+    const conditionCount = associatedConditions.length;
+    const treatmentCount = treatmentOptions.length;
+    const connectionCount = similarPathogens.length;
+    
+    return {
+      total: Math.min(100, (conditionCount * 10 + treatmentCount * 5 + connectionCount * 3)),
+      factors: {
+        conditions: conditionCount,
+        treatments: treatmentCount,
+        connections: connectionCount
+      }
+    };
+  }, [pathogen, associatedConditions, treatmentOptions, similarPathogens]);
+
   // Animate panel when pathogen changes
   useEffect(() => {
     if (pathogen) {
@@ -61,22 +80,6 @@ const PathogenDetailPanel = ({
     }
     setExpandedSections(newExpanded);
   };
-
-  // Calculate pathogen complexity score
-  const complexityScore = useMemo(() => {
-    const conditionCount = associatedConditions.length;
-    const treatmentCount = treatmentOptions.length;
-    const connectionCount = similarPathogens.length;
-    
-    return {
-      total: Math.min(100, (conditionCount * 10 + treatmentCount * 5 + connectionCount * 3)),
-      factors: {
-        conditions: conditionCount,
-        treatments: treatmentCount,
-        connections: connectionCount
-      }
-    };
-  }, [associatedConditions, treatmentOptions, similarPathogens]);
 
   // Get gram status styling
   const getGramStatusStyle = () => {
@@ -263,7 +266,7 @@ const PathogenDetailPanel = ({
                           <span>Affects {associatedConditions.length} condition types</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
-                          <Pills size={14} className="text-green-600" />
+                          <Pill size={14} className="text-green-600" />
                           <span>{treatmentOptions.length} treatment options available</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
